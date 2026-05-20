@@ -276,22 +276,7 @@ class MainActivity : ComponentActivity() {
         // Core animation fading logo sequence
         LaunchedEffect(Unit) {
             // Wait for 2200ms to allow gorgeous brand intro
-            kotlin.jvm.internal.Intrinsics.checkNotNull(this)
-            Handler(Looper.getMainLooper()).postDelayed({
-                androidx.compose.runtime.snapshots.Snapshot.withoutReadObservation {
-                    // Fade out screen
-                    val animationScope = this
-                    Handler(Looper.getMainLooper()).post {
-                        // Start transitions
-                        kotlinx.coroutines.GlobalScope.run {
-                            // Run on main looper
-                        }
-                    }
-                }
-            }, 2200)
-            
-            // Wait transitions
-            kotlinx.coroutines.delay(2000)
+            kotlinx.coroutines.delay(2200)
             splashAlpha.animateTo(0f, animationSpec = tween(500))
             webAlpha.animateTo(1f, animationSpec = tween(500))
         }
