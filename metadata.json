@@ -1,0 +1,6 @@
+{
+  "name": "Tower Tracker",
+  "description": "Interactive cell tower visualizer, signal strength meter, and network optimizer.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
